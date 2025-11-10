@@ -1,4 +1,4 @@
-/* Root typography settings */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap');/* Root typography settings */
 html{
 /*   set the following properties: 
   font-size - this will be the base font size for the site
@@ -6,25 +6,101 @@ html{
   line-height - base line height, generally should be in the range 1.5-1.8 
   color- primary text color for the site
   background-color - primary background color for the site */
+color: #F1F0ED;
+font-family: "Archivo Narrow", sans-serif;
+font-optical-sizing: auto;
+font-weight: 550;
+font-style: normal;
+font-size: larger;
+line-height: 1.65
+ /* 32px */
+}
 
-  
+header {
+  display: flex;
+  justify-content: space-between; /* site title left, nav right */
+  align-items: center;           /* vertical centering */
+  padding: 1rem;
+}
+
+/* Styles the site title at the top of the header */
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;   /* remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;      /* horizontal layout for links */
+  gap: 1rem;          /* space between items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #95BA5D;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: 
+#F1F0ED; /* hover color */
+}
+
+nav a:visited {
+  color: darkolivegreen;
+}
+nav a:visited:hover {
+  color:#F1F0ED;
+  }
+/* ------------- END Header styles  */
+
+body{
+  color: #F1F0ED;
+  background: var(--primary-background, #171717);
+  line-height: 1.65;
+  width: 75ch; 
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* General heading styles */
-h1, h2, h3, h4, h5, h6{
-  set font styles for all of your headings, for example font-weight, line-height, font-family
-}
+
+  /* set font styles for all of your headings, for example font-weight, line-height, font-family */
+
 
 /* Specific element text styles */
-h1{
+h1{font-family: "Tenor Sans", sans-serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.65;
   /*   this is the page title */
 }
 
-h2{
-  
+h2{font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    margin-bottom:  1%;
+  }
+
+p{ margin-bottom: 1rem; /* optional but usually good to have a space between paragraphs */
 }
 
-p{
+a{
+  color:#95BA5D
+}
+a:hover{
+  color: #F1F0ED;
+}
+a:visited{
+  color: darkolivegreen;
+}
 
-  margin-bottom: 1rem; /* optional but usually good to have a space between paragraphs */
+a:visited:hover{
+  color: #F1F0ED;
 }
